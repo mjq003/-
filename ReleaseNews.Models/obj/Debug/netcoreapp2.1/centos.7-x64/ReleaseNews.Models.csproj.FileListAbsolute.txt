@@ -1,0 +1,9 @@
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\bin\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Models.deps.json
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\bin\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Models.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\bin\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Models.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Models.csprojAssemblyReference.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Models.csproj.CoreCompileInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Models.AssemblyInfoInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Models.AssemblyInfo.cs
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Models.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Models.pdb

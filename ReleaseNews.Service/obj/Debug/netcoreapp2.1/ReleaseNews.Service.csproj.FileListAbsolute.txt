@@ -1,0 +1,35 @@
+E:\projectCode\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Service.deps.json
+E:\projectCode\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Service.dll
+E:\projectCode\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Service.pdb
+E:\projectCode\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Models.dll
+E:\projectCode\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Models.pdb
+E:\projectCode\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.csprojAssemblyReference.cache
+E:\projectCode\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.csproj.CoreCompileInputs.cache
+E:\projectCode\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.AssemblyInfoInputs.cache
+E:\projectCode\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.AssemblyInfo.cs
+E:\projectCode\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.csproj.CopyComplete
+E:\projectCode\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.dll
+E:\projectCode\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.pdb
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Service.deps.json
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Service.dll
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Service.pdb
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Models.dll
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Models.pdb
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.csproj.CoreCompileInputs.cache
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.AssemblyInfoInputs.cache
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.AssemblyInfo.cs
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.dll
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.pdb
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.csprojAssemblyReference.cache
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.csproj.CopyComplete
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Service.deps.json
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Service.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Service.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Models.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\ReleaseNews.Models.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.csproj.CoreCompileInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.AssemblyInfoInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.AssemblyInfo.cs
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\ReleaseNews.Service.csprojResolveAssemblyReference.cache

@@ -1,0 +1,133 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int id = 0;
+}
+@using ReleaseNews.Models.Response;
+<div class="content-wrap">
+    <div class="content">
+        @{
+            var response = ViewData["Users"] as ResponseModel;
+            id = response.data.F_UserId;
+            <header class="article-header">
+                <span class="article-title">@response.data.F_RealName</span>
+                @if (@response.data.F_Sex == "男")
+                {
+                    <span class="article-title" style="color:cornflowerblue;">♂</span>
+                }
+                else
+                {
+                    <span class="article-title" style="color:hotpink;">♀</span>
+                }
+                @if (ViewBag.Type == 1)
+                {
+                    <div class="article-meta">
+                        <span class="item article-meta-time" style="font-size:15px;">
+                            <a onclick="addfollow()"><i class="glyphicon glyphicon-ok" style="color:darkturquoise;"></i> 关注此人</a>
+                        </span>
+                        <span class="item article-meta-comment" data-toggle="tooltip" data-placement="bottom" title="" style="font-size:15px;">
+                            <a onclick="deletefollow()"><i class="glyphicon glyphicon-remove" style="color:orangered;"></i> 取消关注</a>
+                        </span>
+                        <span class="item article-meta-comment" data-toggle="tooltip" data-placement="bottom" title="" style="font-size:15px;">
+                            <a onClick="sendMessage('550','410','发送消息','/UserInfo/SendMessage?Id=@id')"><i class="glyphicon glyphicon-envelope" style="color:cornflowerblue;"></i> 发送消息</a>
+                        </span>
+                    </div>
+                }
+            </header>
+
+            <article class="article-content">
+                <p><img data-original="@response.data.F_Image" src="@response.data.F_Image" alt="" style="width:200px;height:200px;" /></p>
+                <p>
+                    @response.data.F_Remark
+                </p>
+            </article>
+            @if (ViewBag.Type == 0)
+            {
+                <div style="display:-webkit-flex;-webkit-justify-content:center;-webkit-align-items:center;">
+                    <button type="button" class="btn btn-default" onclick="sendMessage('700','500','修改头像','/UserInfo/UpdateUserInfo?Id=@id')"><i class="icon-search"></i> 编辑资料</button>
+                </div>
+            }
+        }
+
+        <div class="relates">
+            <div class="title">
+                <h3>@ViewData["UserType"]</h3>
+            </div>
+            @{
+                var recommonds = ViewData["PublishNews"] as ResponseModel;
+                <ul>
+                    @if (recommonds.code == 200)
+                    {
+                        foreach (var recommond in recommonds.data)
+                        {
+                            <li><a href="/News/Detail?id=@recommond.Id" title="@recommond.Title" target="_blank">@recommond.Title</a></li>
+                        }
+                    }
+                </ul>
+            }
+        </div>
+    </div>
+</div>
+<aside class="sidebar">
+    <div class="fixed">
+        <h2 style="font-size: 28px;margin:17px 0; margin-left :80px;font-family: 'TaurusNormal';">
+            粉丝:
+            <a href="/UserInfo/Follow?Id=@id&&type=0" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="bottom" title="" draggable="false" data-original-title="@ViewData["Funs"]">@ViewData["Funs"]</a>
+        </h2>
+        <h2 style="font-size: 28px;margin: 17px 0;margin-left:80px;font-family: 'TaurusNormal';">
+            关注:
+            <a href="/UserInfo/Follow?Id=@id&&type=1" target="_blank" data-toggle="tooltip" rel="nofollow" data-placement="bottom" title="" draggable="false" data-original-title="@ViewData["Follow"]">@ViewData["Follow"]</a>
+        </h2>
+
+    </div>
+    <div class="widget widget_hot">
+
+    </div>
+    <div class="widget widget_sentence">
+        <a href="http://study.163.com/instructor/1025318795.htm" target="_blank" rel="nofollow">
+            <img style="width: 100%" src="~/images/1.png">
+        </a>
+    </div>
+    <div class="widget widget_sentence">
+        <a href="http://study.163.com/instructor/1025318795.htm" target="_blank" rel="nofollow">
+            <img style="width: 100%" src="~/images/2.png">
+        </a>
+    </div>
+</aside>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.ias.js"></script>
+<script src="/js/scripts.js"></script>
+<script src="/admin/js/H-ui.admin.js"></script>
+<script src="/admin/layer/layer.min.js"></script>
+<script src="/admin/js/H-ui.js"></script>
+<script type="text/javascript">
+    function addfollow() {
+        $.ajax({
+            type: 'post',
+            async: true,
+            url: '/UserInfo/Addfollow',
+            data: { followId:@id },
+            success: function (data) {
+                if (data.code == 200) {
+                    alert(data.result);
+                } else {
+                    alert(data.result);
+                }
+            }
+        });
+    }
+     function deletefollow() {
+        $.ajax({
+            type: 'post',
+            async: true,
+            url: '/UserInfo/Deletefollow',
+            data: { followId:@id },
+            success: function (data) {
+                if (data.code == 200) {
+                    alert(data.result);
+                } else {
+                    alert(data.result);
+                }
+            }
+        });
+    }
+</script>

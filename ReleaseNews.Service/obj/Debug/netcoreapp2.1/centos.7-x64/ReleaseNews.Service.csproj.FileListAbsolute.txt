@@ -1,0 +1,12 @@
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Service.deps.json
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Service.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Service.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Models.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Models.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Service.csprojAssemblyReference.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Service.csproj.CoreCompileInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Service.AssemblyInfoInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Service.AssemblyInfo.cs
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Service.csproj.CopyComplete
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Service.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Debug\netcoreapp2.1\centos.7-x64\ReleaseNews.Service.pdb

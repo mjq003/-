@@ -1,0 +1,115 @@
+﻿
+@{
+    Layout = null;
+    string sexMen = "男";
+    string sexWomen = "女";
+}
+@model ReleaseNews.Models.Response.ResponseModel
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/admin/js/html5.js"></script>
+    <script type="text/javascript" src="/admin/js/respond.min.js"></script>
+    <script type="text/javascript" src="/admin/js/PIE_IE678.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="/admin/css/H-ui.css" />
+    <link type="text/css" rel="stylesheet" href="/admin/css/H-ui.admin.css" />
+    <link type="text/css" rel="stylesheet" href="/admin/font/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="apple-touch-icon-precomposed" href="/images/icon.png">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <!--[if IE 7]>
+    <link href="font/font-awesome-ie7.min.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <title>添加Banner</title>
+</head>
+<body>
+    <div class="pd-20">
+        <div class="Huiform">
+            <form class="navbar-form" id="updateImageForm">
+                <table class="table table-bg" width="500">
+                    <tbody>
+                        @if (Model.code == 200)
+                        {
+                            <tr>
+                                <th class="text-r">昵称：</th>
+                                <td><input type="text" style="width:200px" class="input-text" value="@Model.data.F_RealName" placeholder="" id="F_RealName" name="F_RealName" datatype="*2-16"></td>
+                            </tr>
+                            <tr>
+                                <th class="text-r">性别：</th>
+                                <td>
+                                    @if (@Model.data.F_Sex == "男")
+                                    {
+                                        <input type="radio" value="1" placeholder="" checked="checked" id="F_Sex" name="F_Sex" datatype="*2-16">@sexMen
+                                    }
+                                    else
+                                    {
+                                        <input type="radio" value="1" placeholder="" id="F_Sex" name="F_Sex" datatype="*2-16">@sexMen
+                                    }
+                                    @if (@Model.data.F_Sex == "女")
+                                    {
+                                        <input type="radio" value="0" placeholder="" checked="checked" id="F_Sex" name="F_Sex" datatype="*2-16">@sexWomen
+                                    }
+                                    else
+                                    {
+                                        <input type="radio" value="0" placeholder="" id="F_Sex" name="F_Sex" datatype="*2-16">@sexWomen
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-r">头像：</th>
+                                <td><input type="file" name="file" width="300" /></td>
+                            </tr>
+                            <tr>
+                                <th class="text-r">个性签名：</th>
+                                <td><input type="text" style="width:550px;" class="input-text" value="@Model.data.F_Remark" placeholder="" id="F_Remark" name="F_Remark" datatype="*2-16"></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td><button class="btn btn-default btn-search" name="search" type="button" onclick="updateImage()">保存</button></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="/admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/admin/js/Validform_v5.3.2_min.js"></script>
+    <script type="text/javascript" src="/admin/js/H-ui.js"></script>
+    <script type="text/javascript" src="/admin/js/H-ui.admin.js"></script>
+    <script src="/admin/layer/layer.min.js"></script>
+    <script type="text/javascript">
+        function updateImage() {
+            var formData = new FormData(document.getElementById("updateImageForm"));
+            $.ajax({
+                type: 'post',
+                async: false,
+                cache: false,
+                contentType: false,
+                processData: false,
+                url: '/Admin/Users/UpdateUserInfo',
+                data: formData,
+                success: function (data) {
+                    if (data.code == 200) {
+                        alert(data.result);
+                        parent.window.close();
+                        parent.location.href = parent.location.href;
+                    } else {
+                        alert(data.result);
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

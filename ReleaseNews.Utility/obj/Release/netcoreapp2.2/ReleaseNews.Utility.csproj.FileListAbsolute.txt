@@ -1,0 +1,11 @@
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Utility\bin\Release\netcoreapp2.2\ReleaseNews.Utility.deps.json
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Utility\bin\Release\netcoreapp2.2\ReleaseNews.Utility.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Utility\bin\Release\netcoreapp2.2\ReleaseNews.Utility.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Utility\obj\Release\netcoreapp2.2\ReleaseNews.Utility.csprojResolveAssemblyReference.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Utility\obj\Release\netcoreapp2.2\ReleaseNews.Utility.csproj.CoreCompileInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Utility\obj\Release\netcoreapp2.2\ReleaseNews.Utility.AssemblyInfoInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Utility\obj\Release\netcoreapp2.2\ReleaseNews.Utility.AssemblyInfo.cs
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Utility\obj\Release\netcoreapp2.2\ReleaseNews.Utility.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Utility\obj\Release\netcoreapp2.2\ReleaseNews.Utility.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Utility\bin\Release\netcoreapp2.2\ReleaseNews.Models.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Utility\bin\Release\netcoreapp2.2\ReleaseNews.Models.pdb

@@ -1,0 +1,6 @@
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Web\obj\Debug\netcoreapp2.2\centos.7-x64\ReleaseNews.Web.csprojAssemblyReference.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Web\obj\Debug\netcoreapp2.2\centos.7-x64\ReleaseNews.Web.csproj.CoreCompileInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Web\obj\Debug\netcoreapp2.2\centos.7-x64\ReleaseNews.Web.RazorAssemblyInfo.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Web\obj\Debug\netcoreapp2.2\centos.7-x64\ReleaseNews.Web.RazorAssemblyInfo.cs
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Web\obj\Debug\netcoreapp2.2\centos.7-x64\ReleaseNews.Web.AssemblyInfoInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Web\obj\Debug\netcoreapp2.2\centos.7-x64\ReleaseNews.Web.AssemblyInfo.cs

@@ -1,0 +1,14 @@
+﻿正在还原 E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Web\ReleaseNews.Web.csproj 的包...
+正在提交还原...
+正在生成 MSBuild 文件 E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Web\obj\ReleaseNews.Web.csproj.nuget.g.props。
+将锁定文件写入磁盘。路径: E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Web\obj\project.assets.json
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Web\ReleaseNews.Web.csproj 的还原在 1.11 sec 内完成。
+已从 ReleaseNews.Web 成功卸载“Microsoft.Net.Compilers 3.0.0-beta4-final”
+执行 nuget 操作花费时间 413.57 ms
+已用时间: 00:00:01.6271617
+========== 已完成 ==========
+
+正在还原 NuGet 程序包...
+已用时间: 00:00:00.3291721
+========== 已完成 ==========
+

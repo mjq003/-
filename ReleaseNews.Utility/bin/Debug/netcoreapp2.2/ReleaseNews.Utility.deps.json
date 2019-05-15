@@ -1,0 +1,80 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "7c85cd4da2789761c479370ac473259287eac635"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "ReleaseNews.Utility/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.2-beta1",
+          "ReleaseNews.Models": "1.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0.0",
+          "Microsoft.AspNetCore.Http.Features": "2.2.0.0"
+        },
+        "runtime": {
+          "ReleaseNews.Utility.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2-beta1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23131"
+          }
+        }
+      },
+      "ReleaseNews.Models/1.0.0": {
+        "runtime": {
+          "ReleaseNews.Models.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Http.Abstractions/2.2.0.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.2.0.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Http.Features.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ReleaseNews.Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/12.0.2-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HRdPuw8qsV49lIqVHJZqriraVTYYYKTM+E+bOoPAr7J49wctTRoiF/jRnjYi3jIxudLTLpUTQY7v/7X/so61KQ==",
+      "path": "newtonsoft.json/12.0.2-beta1",
+      "hashPath": "newtonsoft.json.12.0.2-beta1.nupkg.sha512"
+    },
+    "ReleaseNews.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.2.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Http.Features/2.2.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

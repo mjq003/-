@@ -1,0 +1,18 @@
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Models\bin\Release\netcoreapp2.1\ReleaseNews.Models.deps.json
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Models\bin\Release\netcoreapp2.1\ReleaseNews.Models.dll
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Models\bin\Release\netcoreapp2.1\ReleaseNews.Models.pdb
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Models\obj\Release\netcoreapp2.1\ReleaseNews.Models.csprojResolveAssemblyReference.cache
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Models\obj\Release\netcoreapp2.1\ReleaseNews.Models.csproj.CoreCompileInputs.cache
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Models\obj\Release\netcoreapp2.1\ReleaseNews.Models.AssemblyInfoInputs.cache
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Models\obj\Release\netcoreapp2.1\ReleaseNews.Models.AssemblyInfo.cs
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Models\obj\Release\netcoreapp2.1\ReleaseNews.Models.dll
+C:\Users\mjq\Desktop\asp.net core 2.1 +sqlserver +ef项目实战\ReleaseNews\ReleaseNews.Models\obj\Release\netcoreapp2.1\ReleaseNews.Models.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\bin\release\netcoreapp2.1\ReleaseNews.Models.deps.json
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\bin\release\netcoreapp2.1\ReleaseNews.Models.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\bin\release\netcoreapp2.1\ReleaseNews.Models.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\obj\release\netcoreapp2.1\ReleaseNews.Models.csproj.CoreCompileInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\obj\release\netcoreapp2.1\ReleaseNews.Models.AssemblyInfoInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\obj\release\netcoreapp2.1\ReleaseNews.Models.AssemblyInfo.cs
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\obj\release\netcoreapp2.1\ReleaseNews.Models.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\obj\release\netcoreapp2.1\ReleaseNews.Models.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Models\obj\Release\netcoreapp2.1\ReleaseNews.Models.csprojResolveAssemblyReference.cache

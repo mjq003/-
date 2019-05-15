@@ -1,0 +1,68 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int type = ViewBag.Type;
+    int id = ViewBag.id;
+}
+<div class="content-wrap">
+    <div class="content">
+        <div class="title">
+            @if (ViewBag.Type == 0)
+            {
+                <h3>粉丝列表</h3>
+            }
+            else
+            {
+                <h3>关注列表</h3>
+            }
+        </div>
+        <div id="user_follow">
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        if (@type == 0) {
+            getFunsFollow();
+        }
+        else {
+            getFollowFollow();
+        }
+    });
+    function getFunsFollow() {
+        $.ajax({
+            type: 'get',
+            url: '/UserInfo/UserFunsPageQuery',
+            data: { FollowId:@id },
+            success: function (data) {
+                if (data.code == 200) {
+                    $("#user_follow").empty();
+                    for (var i = 0; i < data.data.length; i++) {
+                        var m = data.data[i];
+                        var news;
+                        news = '<article class="excerpt excerpt-1" style=""><a class="focus" href = "/UserInfo/Index?UserId=' + m.f_UserId + '&&Type=1" title = "' + m.f_RealName + '" target = "_blank" > <img class="thumb" data-original="' + m.f_Image + '" src="' + m.f_Image + '" alt="' + m.f_RealName + '" style="display: inline;"></a><header><h2><a href="/UserInfo/Index?UserId=' + m.f_UserId + '&&Type=1" title="' + m.f_RealName + '" target="_blank">' + m.f_RealName + '</a></h2></header><p class="meta"><time class="time"><i class="glyphicon glyphicon-time"></i> ' + m.followTime + '</time><a class="comment" title="评论" target="_blank"><i class="glyphicon glyphicon-user"></i> ' + m.f_Sex + '</a></p><p class="note">' + m.f_Remark + '</p></article >';
+                        $("#user_follow").append(news);
+                    }
+                }
+            }
+        });
+    }
+
+    function getFollowFollow() {
+        $.ajax({
+            type: 'get',
+            url: '/UserInfo/UserFollowPageQuery',
+            data: { userId:@id },
+            success: function (data) {
+                if (data.code == 200) {
+                    $("#user_follow").empty();
+                    for (var i = 0; i < data.data.length; i++) {
+                        var m = data.data[i];
+                        var news;
+                        news = '<article class="excerpt excerpt-1" style=""><a class="focus" href = "/UserInfo/Index?UserId=' + m.f_UserId + '&&Type=1" title = "' + m.f_RealName + '" target = "_blank" > <img class="thumb" data-original="' + m.f_Image + '" src="' + m.f_Image + '" alt="' + m.f_RealName + '" style="display: inline;"></a><header><h2><a href="/UserInfo/Index?UserId=' + m.f_UserId + '&&Type=1" title="' + m.f_RealName + '" target="_blank">' + m.f_RealName + '</a></h2></header><p class="meta"><time class="time"><i class="glyphicon glyphicon-time"></i> ' + m.followTime + '</time><a class="comment" title="评论" target="_blank"><i class="glyphicon glyphicon-user"></i> ' + m.f_Sex + '</a></p><p class="note">' + m.f_Remark + '</p></article >';
+                        $("#user_follow").append(news);
+                    }
+                }
+            }
+        });
+    }
+</script>

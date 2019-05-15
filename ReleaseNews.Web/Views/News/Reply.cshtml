@@ -1,0 +1,51 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jquery表情输入框插件</title>
+    <link href="~/css/facereply.css" type="text/css" rel="stylesheet">
+    <script src="~/js/face.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/js/face.js" charset="utf-8"></script>
+</head>
+<body>
+    <div id="Smohan_FaceBox">
+        @Html.Hidden("UserId", ViewData["UserId"])
+        @Html.Hidden("NewsId", ViewData["NewsId"])
+        @Html.Hidden("OldId", ViewData["OldId"])
+        <h3>评论 @ViewData["UserName"]</h3>
+        <textarea name="Contents" id="Contents" class="smohan_text"></textarea>
+        <p>
+            <a href="javascript:void(0)" class="face" title="表情"></a>
+            <button class="button" id="replyMessage">评论</button>
+        </p>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $("a.face").smohanfacebox({
+                Event: "click",	//触发事件
+                divid: "Smohan_FaceBox", //外层DIV ID
+                textid: "Contents" //文本框 ID
+            });
+            //解析表情  $('#Zones').replaceface($('#Zones').html());
+        });
+        $('#replyMessage').click(function () {
+            $.ajax({
+                type: 'post',
+                url: '/News/GetReply',
+                data: { NewsId:@ViewData["NewsId"],OldId: @ViewData["OldId"], UserId: @ViewData["UserId"],Contents: $('#Contents').val()},
+                success: function (data) {
+                    if (data.code == 200) {
+                        alert(data.result);
+                        parent.reload();
+                    } else {
+                        alert(data.result);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

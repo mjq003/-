@@ -1,0 +1,148 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using ReleaseNews.Models.Response;
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link type="text/css" rel="stylesheet" href="/admin/css/H-ui.css" />
+    <link type="text/css" rel="stylesheet" href="/admin/font/font-awesome.min.css" />
+    <style type="text/css">
+        #comment-post {
+            background: #3399CC;
+            border: none;
+            border: 2px solid;
+            border-color: #3399CC;
+            border-left: none;
+            border-top: none;
+            padding: 0px;
+            width: 100px;
+            height: 38px;
+            color: #FFF;
+            outline: 0;
+            border-radius: 0 0 2px 0;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+
+            #comment-post:hover {
+                background: #FBFBFB;
+                border-color: #CCD4D9;
+                color: #3399CC;
+                border-top: solid 1px #F2F2F2;
+            }
+    </style>
+</head>
+<body class="user-select">
+    <div class="content-wrap">
+        <header class="header">
+            <nav class="navbar navbar-default" id="navbar">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="header-navbar">
+                        <ul class="nav navbar-nav navbar-left">
+                            @{
+                                var responseFather = ViewData["FatherNewsClassify"] as ResponseModel;
+                                if (responseFather.code == 200)
+                                {
+                                    @foreach (var classify in responseFather.data)
+                                    {
+                                        <li><a href="/News/Classify?id=@classify.Id">@classify.Name</a></li>
+                                    }
+                                }
+                                <li><a href="">|</a></li>
+                            }
+                        </ul>
+                        <ul class="nav navbar-nav navbar-left">
+                            @{
+                                var response = ViewData["SonNewsClassify"] as ResponseModel;
+                                if (response.code == 200)
+                                {
+                                    @foreach (var classify in response.data)
+                                    {
+                                        <li><a href="/News/Classify?id=@classify.Id">@classify.Name</a></li>
+                                    }
+                                }
+                            }
+                        </ul>
+                    </div>
+                    <div class="text-c" style="float:right; margin-bottom:5px;">
+                        <input type="text" class="input-text" style="width:250px" placeholder="输入主题" id="keyword" name="keyword">&nbsp;<button type="button" class="btn btn-default" onclick="search()"><i class="icon-search"></i> 搜索</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" name="comment-post" id="comment-post" onclick="publishPost()"><i class="icon-search"></i> 我要发帖</button>
+                    </div>
+
+                    <table class="table table-border table-bordered table-hover table-bg table-sort">
+                        <thead>
+                            <tr class="text-c">
+                                <th width="500" style="text-align:left; border:0px;">主题</th>
+                                <th width="80" style="text-align:left; border:0px;"></th>
+                                <th width="100" style="text-align:left; border:0px;">球队专区</th>
+
+                                <th width="80" style="text-align:left; border:0px;">发布时间</th>
+                            </tr>
+                        </thead>
+                        <tbody id="news_contents"></tbody>
+                    </table>
+                    <div id="pageNav" class="pageNav"></div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <script type="text/javascript" src="/admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/admin/layer/layer.min.js"></script>
+    <script type="text/javascript" src="/admin/js/pagenav.cn.js"></script>
+    <script type="text/javascript" src="/admin/js/H-ui.js"></script>
+    <script type="text/javascript" src="/admin/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/admin/js/H-ui.admin.js"></script>
+    <script>
+        var pageSize = 20;
+        var pageIndex = 1;
+        var currentPageCount = 0;
+        var classifyId = 0;
+        var keyword = "";
+        var lastPage = 1;
+        window.onload = (function () {
+            // optional set
+            pageNav.pre = "&lt;上一页";
+            pageNav.next = "下一页&gt;";
+            getNews(pageIndex, pageSize, classifyId, keyword);
+        });
+        function search() {
+            var keyword = $("#keyword").val();
+            pageIndex = 1;
+            getNews(pageIndex, pageSize, classifyId, keyword);
+        }
+        function getNews(pageIndex, pageSize, classifyId, keyword) {
+            $.ajax({
+                type: 'get',
+                async: true,
+                url: '/Admin/News/GetNews',
+                data: { pageIndex: pageIndex, pageSize: pageSize, quertType: 2, classifyId: classifyId, keyword: keyword },
+                success: function (result) {
+                    currentPageCount = result.data.length;//当前页的新闻数量
+                    var totalPage = parseInt(result.total / pageSize + 1);//总页数
+                    // p,当前页码,pn,总页面
+                    pageNav.fn = function (p, pn) {
+                        $("#pageinfo").text("当前页:" + p + " 总页: " + totalPage);
+                        if (p != lastPage)
+                            getNews(p, pageSize, classifyId, keyword)
+                    };
+                    pageNav.go(pageIndex, totalPage);
+                    $("#news_contents").empty();
+                    for (var i = 0; i < result.data.length; i++) {
+                        var trData = result.data[i];
+                        var tr = '<tr class="text-c"><th width="500" style="border:0px; font-size:15px; text-align:left;"><a href="/News/Detail?id=' + trData.id + '" target="_blank">' + trData.title + '</a></th><th width="80" style="border:0px; color:darkgray; font-size:15px; text-align:left;">' + trData.loveCount + '亮' + trData.commentCount + '回复</th><th width="100" style="border:0px; color:darkgray; font-size:15px; text-align:left;"><a href="/News/Classify?id=' + trData.classifyId + '" target="_blank">' + trData.classifyName + '</a></th><th width="80" style="border:0px; color:darkgray; font-size:15px; text-align:left;">' + trData.publishDate + '</th></tr>';
+                        $("#news_contents").append(tr);
+                    }
+                    lastPage = pageIndex;
+                }
+            });
+        }
+
+        function publishPost() {
+            window.open("/UEditor/Index");
+        }
+    </script>
+</body>

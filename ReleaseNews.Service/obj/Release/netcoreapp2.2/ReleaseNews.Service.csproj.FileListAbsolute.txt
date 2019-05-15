@@ -1,0 +1,14 @@
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Release\netcoreapp2.2\ReleaseNews.Service.deps.json
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Release\netcoreapp2.2\ReleaseNews.Service.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Release\netcoreapp2.2\ReleaseNews.Service.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Release\netcoreapp2.2\ReleaseNews.Models.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Release\netcoreapp2.2\ReleaseNews.Models.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Release\netcoreapp2.2\ReleaseNews.Service.csprojResolveAssemblyReference.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Release\netcoreapp2.2\ReleaseNews.Service.csproj.CoreCompileInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Release\netcoreapp2.2\ReleaseNews.Service.AssemblyInfoInputs.cache
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Release\netcoreapp2.2\ReleaseNews.Service.AssemblyInfo.cs
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Release\netcoreapp2.2\ReleaseNews.Service.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\obj\Release\netcoreapp2.2\ReleaseNews.Service.pdb
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Release\netcoreapp2.2\NetCoreCacheService.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Release\netcoreapp2.2\ReleaseNews.Utility.dll
+E:\asp.netcore2.1\ReleaseNews\ReleaseNews.Service\bin\Release\netcoreapp2.2\ReleaseNews.Utility.pdb

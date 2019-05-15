@@ -1,0 +1,78 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using ReleaseNews.Models.Response;
+<div class="content-wrap">
+    <div class="content">
+        <div class="text-c" style="margin-top:10px;">
+            <select class="select" id="classifyId" name="classifyId">
+                <option value="0">选择发布话题区</option>
+                @{
+                    var recommonds = ViewData["postclassify"] as ResponseModel;
+                    @if (recommonds.code == 200)
+                    {
+                        foreach (var recommond in recommonds.data)
+                        {
+                            <option value="@recommond.Id">@recommond.Name</option>
+                        }
+                    }
+                }
+            </select>
+        </div>
+        <div class="input-group" style="width:600px; margin-top:10px;">
+            <input type="text" name="title" id="title" class="form-control" size="50" placeholder="请输入标题(最多50个字)" maxlength="50" autocomplete="off">
+        </div>
+        <div class="input-group" style="margin-top:10px;">
+            <script id="container" name="container" type="text/plain">
+
+            </script>
+        </div>
+        <div class="input-group" style="margin-top:10px;">
+            <span class="input-group-btn">
+                <button class="btn btn-default btn-search" name="search" type="button" onclick="Publish()">发布</button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/ueditor-1.4.3.3/ueditor.config.js"></script>
+<script src="~/lib/ueditor-1.4.3.3/ueditor.all.min.js"></script>
+<script src="~/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+    var ue = UE.getEditor('container', {
+        initialFrameHeight: 700,
+        initialFrameWidth: 1200,
+    });
+    //var ue = UE.getEditor('container', {
+    //    toolbars: [
+    //        ['fullscreen', 'source', 'undo', 'redo', 'bold']
+    //    ],
+    //    autoHeightEnabled: true,
+    //    autoFloatEnabled: true
+    //});
+
+    function Publish() {
+        var title = $("#title").val();
+        var classifyId = $("#classifyId").val();
+        var html = ue.getContent();
+        if (classifyId == 0) {
+            alert('请选择发布话题区');
+            $("#title").focus();
+            return false;
+        }
+        if (title == "") {
+            alert('请输入标题');
+            $("#title").focus();
+            return false;
+        }
+        $.ajax({
+            type: 'post',
+            async: true,
+            url: '/UEditor/AddPost',
+            data: { classifyId: classifyId, title: title, content: html },
+            success: function (data) {
+                alert(data.result);
+            }
+        });
+    }
+</script>
